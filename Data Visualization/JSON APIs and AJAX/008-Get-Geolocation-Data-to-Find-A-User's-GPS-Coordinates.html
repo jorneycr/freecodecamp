@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC - Data Visualization - JSON APIs and AJAX</title>
+</head>
+
+<body>
+    <h4>You are here:</h4>
+    <div id="data"></div>
+    <script>
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                document.getElementById('data').innerHTML =
+                    `<p><strong>Latitude</strong>: ${position.coords.latitude}<br /><strong>Longitude</strong>: ${position.coords.longitude}</p>`;
+            });
+        }
+    </script>
+</body>
+
+</html>
+<!-- link: https://www.freecodecamp.org/learn/data-visualization/json-apis-and-ajax/get-geolocation-data-to-find-a-users-gps-coordinates
+For the live view, please visit the below link
+https://geekyorion.github.io/freecodecamp/Data Visualization/JSON APIs and AJAX/008-Get-Geolocation-Data-to-Find-A-User's-GPS-Coordinates.html -->

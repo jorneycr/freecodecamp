@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: black;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body {
+    background: black url("./avicii-background.png") no-repeat fixed center;
+    background-position-y: bottom;
+    background-size: cover;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+.navbar {
+    align-items: center;
+    background: #0008;
+    border-bottom: 2px solid #888;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 5rem;
+    position: fixed;
+    transition-duration: .25s;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar:hover {
+    background: black;
+    border-color: #ccc;
+}
+
+.site-logo {
+    height: auto;
+    margin: auto;
+    width: 10rem;
+}
+
+.site-tagline {
+    font-size: 1rem;
+    text-align: right;
+}
+
+.site-links {
+    display: grid;
+    font-size: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+.site-links a {
+    padding: 15px;
+    transition-duration: .25s;
+}
+
+.site-links a:hover{
+    background: white;
+    color: black;
+}
+
+.wrapper {
+    padding-top: 5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        height: 90px;
+        justify-content: space-around;
+        position: initial;
+    }
+
+    .logo-section {
+        width: 100%;
+    }
+
+    .logo-section a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .site-links a {
+        padding: 6px 15px;
+    }
+
+    .site-tagline {
+        text-align: center;
+        font-size: 1.4rem;
+        letter-spacing: .2rem;;
+    }
+
+    .wrapper {
+        padding-top: 0;
+    }
+}
+
+.avicii-avatar {
+    padding: 5rem;
+    text-align: center;
+}
+
+.main-avatar {
+    border-radius: 50%;
+    display: block;
+    filter: grayscale(100%) brightness(.5);
+    max-width: 350px;
+    min-width: 200px;
+    margin: auto;
+    transition-duration: .5s;
+    width: 30%;
+}
+
+.title-block {
+    text-align: center;
+}
+
+.main-title {
+    color: transparent;
+    font-size: 10rem;
+    text-align: center;
+    transition-duration: 1s;
+    -webkit-text-stroke: 1px white;
+}
+
+@media only screen and (max-width: 400px) {
+    .main-title {
+        font-size: 7rem;
+    }
+}
+
+.avatar-block:hover .main-title {
+    color: white;
+    letter-spacing: .2rem;
+    text-shadow: 0 0 20px white;
+    transition-duration: .25s;
+}
+
+.avatar-block:hover .main-avatar {
+    filter: grayscale(0) brightness(1.25)
+}
+
+.short-desc {
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    padding-bottom: 1rem;
+}
+
+.secondary-heading {
+    font-size: 3rem;
+    padding: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.secondary-block {
+    background: #0005;
+    transition-duration: .25s;
+}
+
+.secondary-block:hover {
+    background: #000a;
+}
+
+.secondary-content-block {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    padding: 0 50px 10px;
+}
+
+.about-content {
+    list-style: decimal-leading-zero;
+}
+
+.about-lists {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.about-source {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.external-links {
+    color: #faa;
+}
+
+.section-desc {
+    font-size: 1.6rem;
+    letter-spacing: .5rem;
+    margin-top: -3rem;
+    padding: 0 5rem 2rem;
+    text-align: center;
+    word-spacing: 1rem;
+}
+
+.row {
+    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+}
+
+.column:last-child:nth-child(odd) {
+	grid-column: 1 / 3;
+}
+
+@media only screen and (max-width: 1000px) {
+    .row {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .column {
+        grid-column: 1;
+    }
+}
+
+.column {
+    align-items: center;
+    background: #1235;
+    padding: 2rem;
+    text-align: center;
+    transition-duration: .25s;
+}
+
+.column:hover {
+    background: #4475;
+}
+
+.quote-section {
+    display: grid;
+    border-left: 5px solid #123f;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.quote-section:hover {
+    border-color: #447f;
+}
+
+.quote-sign {
+    color: #abc;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30rem;
+    opacity: .3;
+    position: relative;
+    user-select: none;
+    text-align: left;
+    top: 10rem;
+    z-index: -1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.quote-sign span {
+    display: inline-block;
+    margin-right: -3rem;
+}
+
+.quotes {
+    text-align: center;
+    z-index: 1;
+}
+
+.quotes p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: initial;
+    padding-right: 10%;
+    text-transform: uppercase;
+}
+
+.quotes footer {
+    margin-top: 1rem;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.quotes cite {
+    text-transform: capitalize;
+}
+
+.quotes cite::before {
+    content: "- ";
+}
+
+#songs {
+    padding-bottom: 1rem;
+}
+
+.song-wrapper {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    padding: 0;
+    text-align: left;
+}
+
+.song-num {
+    background: #123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 600;
+    transition-duration: .25s;
+    height: 100%;
+}
+
+.song-wrapper:hover .song-num {
+    background: #447
+}
+
+.song-info {
+    padding: 2rem;
+}
+
+.song-detail-heading {
+    display: inline-block;
+    font-weight: 600;
+    text-align: justify;
+    width: 5rem;
+}
+
+.global-footer {
+    background: #0008;
+    border-top: 2px solid #888;
+    padding: 2rem;
+    text-align: center;
+    transition-duration: .25s;
+}
+
+.know-more {
+    font-size: 1.6rem;
+}
+
+.author {
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+    transition-duration: .25s;
+    word-spacing: .5rem;
+}
+
+.global-footer:hover {
+    background: black;
+    border-color: #ccc;
+}
+
+.global-footer:hover .author a {
+    color: #faa;
+    transition-duration: .25s;
+}
