@@ -11,7 +11,7 @@ myStr = "This is the start. " + "This is the end.";     // solution
  * '+' won't introduce any space in between the string so provide space as per use
  *
  * ex:
- *      1) "Geeky" + "Orion"    output --->> "GeekyOrion"
+ *      1) "Geeky" + "Orion"    output --->> "jorneycr"
  *      2) "Geeky " + "Orion"   output --->> "Geeky Orion"
  */
 

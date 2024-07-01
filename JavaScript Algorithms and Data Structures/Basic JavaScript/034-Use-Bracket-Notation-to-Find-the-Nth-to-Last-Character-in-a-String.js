@@ -19,7 +19,7 @@ var secondToLastLetterOfLastName = lastName[lastName.length - 2];       // solut
  *      In python instead of going with "len(variable_name) - position_of_char_from_last"
  *      we can use negative index directly.
  *      ex:
- *          name = "GeekyOrion"
+ *          name = "jorneycr"
  *          # Fetch "i" (third to last letter of name)
  *          name[len(name) - 3]
  *          # or

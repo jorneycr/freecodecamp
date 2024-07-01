@@ -20,8 +20,8 @@ firstLetterOfLastName = lastName[0];    // solution
  *
  * using [index] we can fetch the character at that index
  * ex:
- *      1) "GeekyOrion"[5]      output --->>    "O"
- *      2) "GeekyOrion"[10]     output --->>    "undefined"
+ *      1) "jorneycr"[5]      output --->>    "O"
+ *      2) "jorneycr"[10]     output --->>    "undefined"
  *          because characters are 10 but last index is 9
  */
 

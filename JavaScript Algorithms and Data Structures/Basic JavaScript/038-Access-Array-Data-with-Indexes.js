@@ -13,12 +13,12 @@ var myData = myArray[0];        // solution
  * An array also follows the zero-based indexing so first element is at 0 index.
  * We can nest the calling too while getting the value
  * ex:
- *      var arr = [28, "GeekyOrion"];
+ *      var arr = [28, "jorneycr"];
  *      // get 4th character ("k") from string stored in arr
  *      var char = arr[1][3]
  *      // now char stores the "k"
- *      // arr[1][3] => "GeekyOrion"[3] => "k"
- *      // here arr[1] will be "GeekyOrion" so we can replace arr[1] with its value
+ *      // arr[1][3] => "jorneycr"[3] => "k"
+ *      // here arr[1] will be "jorneycr" so we can replace arr[1] with its value
  *
  *
  * Note:    1) We can not get digit of a number using index becuase it is a number not a string

@@ -3,7 +3,7 @@ var ourArray = [["the universe", 42], ["everything", 101010]];
 
 // Only change code below this line.
 var myArray = [];
-myArray = [["GeekyOrion", 28], ["Shashank", 6]];        // solution
+myArray = [["jorneycr", 28], ["Shashank", 6]];        // solution
 
 /**
  * We can store an array within an another array.

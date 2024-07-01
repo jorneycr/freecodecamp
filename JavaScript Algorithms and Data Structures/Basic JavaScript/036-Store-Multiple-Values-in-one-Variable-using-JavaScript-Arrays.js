@@ -3,7 +3,7 @@ var ourArray = ["John", 23];
 
 // Only change code below this line.
 var myArray = [];
-myArray = ["GeekyOrion", "28"];     // solution
+myArray = ["jorneycr", "28"];     // solution
 
 /**
  * Array is used to store the mutliple value in a single variable.
@@ -12,7 +12,7 @@ myArray = ["GeekyOrion", "28"];     // solution
  *
  * To store the values in an array wrap the values in brackets in comma seprated format
  * ex:
- *      var arr = [1, 2, 3, 4, "string-too", function fun() {console.log("this is a function");}, new Object("name": "GeekyOrion")];
+ *      var arr = [1, 2, 3, 4, "string-too", function fun() {console.log("this is a function");}, new Object("name": "jorneycr")];
  *
  * whatever we want to store, we can store in the array.
  *

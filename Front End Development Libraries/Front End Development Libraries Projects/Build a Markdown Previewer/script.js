@@ -50,7 +50,7 @@ function printHelloWorld(sayHelloTo='World') {
 I guess I need a horizontal line (rule or whatever)
 _______________________________________________
 
-and I can put a link to my profile [GeekyOrion](https://github.com/geekyorion) with picture
+and I can put a link to my profile [jorneycr](https://github.com/jorneycr) with picture
 but you need to read alt text  ![altText: It is my picture :P](whoCares.jpg)
 
 any many more things, We both really don't care but still if you made till the end, give yourself a break &lt;br /&gt; by using setOptions

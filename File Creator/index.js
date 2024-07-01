@@ -86,7 +86,7 @@ for (let i = 0; i < probs.length; i++) {
 </html>
 <!-- link: ${probs[i].link}
 For the live view, please visit the below link
-https://geekyorion.github.io/freecodecamp/${courseName}/${key}/${title} -->
+https://jorneycr.github.io/freecodecamp/${courseName}/${key}/${title} -->
 `;
 
     // use writeFile to write and save file in the same folder (uses relative path)
